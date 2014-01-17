@@ -25,4 +25,16 @@
     </div>
 
   </body>
+
+  <script> 
+
+    $('input[name=options]').change(function() {
+        if ($(this).val() == "url") {
+            $('input[name=input]').prop('type', 'url');
+        } else if ($(this).val() == "textbody") {
+            $('input[name=input]').prop('type', 'text');
+        }
+    });
+
+    </script>
 </html>

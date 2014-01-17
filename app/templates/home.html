@@ -2,15 +2,32 @@
 {% block content %}
 
 <header>
-    <h1 class="logo">Home</h1>
+	<h1 class="logo">Home</h1>
 </header> 
 
-<form action="{{url_for('show_emails')}}" method=post role="form">
+<!-- <form action="{{url_for('show_emails')}}" method=post role="form">
 	<div class="form-group">
 		<label for="url">Enter URL:</label>
-		<input type="url" class="form-control" name="url" id="url" placeholder="URL" required>
+		<input type="text" class="form-control" name="url" id="url" placeholder="URL" required>
 	</div>
 	<button type="submit" class="btn btn-success">Submit</button>
+</form> -->
+
+<form action="{{url_for('show_emails')}}" method=post role="form">
+	<div class="input-group">
+		<input type="url" name="input" class="form-control" required>
+		<div class="input-group-btn" data-toggle="buttons">
+			<label class="btn btn-primary active">
+				<input type="radio" name="options" value='url' id="url" checked="checked">URL</input>
+			</label>
+			<label class="btn btn-primary">
+				<input type="radio" name="options" value='textbody' id="textbody">Text</input>
+			</label>
+		</div><!-- /btn-group -->
+	</div><!-- /input-group -->
+</br>
+<button type="submit" class="btn btn-success">Submit</button>
 </form>
+
 
 {% endblock %}
