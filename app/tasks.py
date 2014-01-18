@@ -43,8 +43,8 @@ class UrlOpenJob(Task):
 		except Exception as exc:
  			print('URL {0} gave error: {1!r}'.format(url, exc))
 
- 	def on_success(self, retval, task_id, args, kwargs):
-		GetEmailsJob().delay(retval)
+ 	# def on_success(self, retval, task_id, args, kwargs):
+		# GetEmailsJob().delay(retval)
 
 class GetEmailsJob(Task):
 	def run(self, htmlSource):

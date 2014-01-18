@@ -5,7 +5,7 @@
     <h1 class="logo">Home</h1>
 </header> 
 
-<form action="{{url_for('show_emails')}}" method=post role="form">
+<form action="/emails" method=post role="form">
 	<div class="input-group">
 		<input type="url" name="input" class="form-control" required>
 		<div class="input-group-btn" data-toggle="buttons">
@@ -19,11 +19,14 @@
 	</div><!-- /input-group -->
 </br>
 <button type="submit" class="btn btn-success">Submit</button>
-{% if text %}
-	{{count}} email(s) found from text
-{% else %}
-	{{count}} email(s) found from {{link_count}} links
-{% endif %}
+<div align="center">
+	{% if text %}
+		<div>{{count}} email(s) found from text</div>
+	{% elif link_count %}
+		<div>{{count}} email(s) found from {{link_count}} link(s)</div>
+	{% endif %}
+	<div id="info"></div>
+</div>
 </form>
 </br>
 
@@ -62,10 +65,18 @@
 {% endif %}
 
 
-<!-- {% for email in results %}
-	{{ email }} </br></br>
-{% endfor %} -->
+<!-- secret table to add emails on the fly -->
+<table class="table table-striped">
+	<thead>
+	</thead>
+	<tbody id="data"></tbody>
+</table>
 
-<!-- {{ emails }}
- -->
+{% for i, count, link_count, url in data: %}
+<script>
+  $("#data").append('<tr><td><a href=\'{{url}}\'>{{url}}</a></td><td>{{ i }}</td></tr>')
+  $("#info").text("{{ count }} emails found from {{link_count}} links")
+</script>
+{% endfor %}
+
 {% endblock %}

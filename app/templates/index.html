@@ -1,0 +1,42 @@
+<!doctype html>
+<title>Send javascript with template demo</title>
+<style>
+  #data {
+    text-align: center;
+  }
+</style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<h2>Demo</h2>
+
+        <ul id="data">
+
+        </ul>
+
+
+{% for i in data: %}
+<script>
+  $("#data").append('<li>'+"{{ i }}"+'</li>')
+</script>
+{% endfor %}
+
+<!-- <div id="data">nothing received yet</div>
+{% for i, c in data: %}
+<script>
+  $("#data").text("{{ i }} {{ c }}")
+</script>
+{% endfor %} -->
+
+<!-- <!doctype html>
+<title>Send javascript with template demo</title>
+<style>
+  #data {
+    text-align: center;
+  }
+</style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<div id="data">nothing received yet</div>
+{% for i, c in data: %}
+<script>
+  $("#data").text("{{ i }} {{ c }}")
+</script>
+{% endfor %} -->

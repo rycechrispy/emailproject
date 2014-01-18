@@ -1,0 +1,169 @@
+[2014-01-17 16:03:43,123: WARNING/MainProcess] /Library/Python/2.7/site-packages/celery/apps/worker.py:159: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2014-01-17 16:03:43,186: INFO/MainProcess] Connected to amqp://chris@127.0.0.1:5672/chrishost
+[2014-01-17 16:03:43,207: INFO/MainProcess] mingle: searching for neighbors
+[2014-01-17 16:03:44,220: INFO/MainProcess] mingle: sync with 1 nodes
+[2014-01-17 16:03:44,221: INFO/MainProcess] mingle: sync complete
+[2014-01-17 16:03:44,248: WARNING/MainProcess] celery3@myhost.local ready.
+[2014-01-17 16:03:47,693: INFO/MainProcess] Events of group {task} enabled by remote.
+[2014-01-17 16:03:56,158: INFO/MainProcess] Received task: tasks.GetEmailsJob[aa8289d8-9126-4db9-8202-96f0ef20b4d0]
+[2014-01-17 16:03:56,219: WARNING/Worker-4] Collecting email from source.
+[2014-01-17 16:03:58,244: INFO/MainProcess] Task tasks.GetEmailsJob[aa8289d8-9126-4db9-8202-96f0ef20b4d0] succeeded in 2.02440286684s: ['jpurdy@uw.edu', 'assembly@u.washington.edu', 'nmmckin@uw.edu']
+[2014-01-17 16:04:00,205: INFO/MainProcess] Received task: tasks.GetEmailsJob[6c52d037-3cd0-445c-b7a5-f3fbff273a98]
+[2014-01-17 16:04:00,208: WARNING/Worker-2] Collecting email from source.
+[2014-01-17 16:04:01,329: INFO/MainProcess] Task tasks.GetEmailsJob[6c52d037-3cd0-445c-b7a5-f3fbff273a98] succeeded in 1.12146199518s: ['10digitphonenumber@airmessage.net', '10digitphonenumber@mobile.surewest.com', '10digitphonenumber@page.mobilcom.net',...
+[2014-01-17 16:04:02,148: INFO/MainProcess] Received task: tasks.GetEmailsJob[656cd312-2454-424e-b436-bf64e256a657]
+[2014-01-17 16:04:02,345: WARNING/Worker-2] Collecting email from source.
+[2014-01-17 16:04:03,921: INFO/MainProcess] Task tasks.GetEmailsJob[656cd312-2454-424e-b436-bf64e256a657] succeeded in 1.57534510386s: ['10digitphonenumber@airmessage.net', '10digitphonenumber@mobile.surewest.com', '10digitphonenumber@page.mobilcom.net',...
+[2014-01-17 16:04:05,088: INFO/MainProcess] Received task: tasks.GetEmailsJob[cdc41465-f71c-4e1a-ab06-b092aa1a8482]
+[2014-01-17 16:04:05,092: WARNING/Worker-1] Collecting email from source.
+[2014-01-17 16:04:05,514: INFO/MainProcess] Task tasks.GetEmailsJob[cdc41465-f71c-4e1a-ab06-b092aa1a8482] succeeded in 0.422974630957s: ['10digitphonenumber@airmessage.net', '10digitphonenumber@mobile.surewest.com', '10digitphonenumber@page.mobilcom.net',...
+[2014-01-17 16:04:07,197: INFO/MainProcess] Received task: tasks.GetEmailsJob[2cbdb2b6-79fa-4db6-8ddc-d176273b7cde]
+[2014-01-17 16:04:07,200: WARNING/Worker-1] Collecting email from source.
+[2014-01-17 16:04:07,972: INFO/MainProcess] Task tasks.GetEmailsJob[2cbdb2b6-79fa-4db6-8ddc-d176273b7cde] succeeded in 0.772083807969s: ['10digitphonenumber@airmessage.net', '10digitphonenumber@mobile.surewest.com', '10digitphonenumber@page.mobilcom.net',...
+[2014-01-17 16:04:09,716: INFO/MainProcess] Received task: tasks.GetEmailsJob[1d66879b-d686-49fc-80b4-b1ea0723ece7]
+[2014-01-17 16:04:09,721: WARNING/Worker-2] Collecting email from source.
+[2014-01-17 16:04:10,337: INFO/MainProcess] Task tasks.GetEmailsJob[1d66879b-d686-49fc-80b4-b1ea0723ece7] succeeded in 0.615858505014s: ['10digitphonenumber@airmessage.net', '10digitphonenumber@mobile.surewest.com', '10digitphonenumber@page.mobilcom.net',...
+[2014-01-17 16:05:45,782: WARNING/MainProcess] /Library/Python/2.7/site-packages/celery/apps/worker.py:159: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2014-01-17 16:05:45,826: INFO/MainProcess] Connected to amqp://chris@127.0.0.1:5672/chrishost
+[2014-01-17 16:05:45,846: INFO/MainProcess] mingle: searching for neighbors
+[2014-01-17 16:05:46,858: INFO/MainProcess] mingle: sync with 1 nodes
+[2014-01-17 16:05:46,859: INFO/MainProcess] mingle: sync complete
+[2014-01-17 16:05:46,869: WARNING/MainProcess] celery3@myhost.local ready.
+[2014-01-17 16:05:47,695: INFO/MainProcess] Events of group {task} enabled by remote.
+[2014-01-17 16:06:21,138: INFO/MainProcess] Received task: tasks.GetEmailsJob[5eaaa737-7fb2-4e6a-bf82-cacaa375ee91]
+[2014-01-17 16:06:21,171: WARNING/Worker-2] Collecting email from source.
+[2014-01-17 16:06:21,477: INFO/MainProcess] Task tasks.GetEmailsJob[5eaaa737-7fb2-4e6a-bf82-cacaa375ee91] succeeded in 0.306414752966s: ['10digitphonenumber@airmessage.net', '10digitphonenumber@mobile.surewest.com', '10digitphonenumber@page.mobilcom.net',...
+[2014-01-17 16:06:23,725: INFO/MainProcess] Received task: tasks.GetEmailsJob[be79aff8-ebc4-40db-9e1d-e77fb9a6a912]
+[2014-01-17 16:06:23,729: WARNING/Worker-3] Collecting email from source.
+[2014-01-17 16:06:23,980: INFO/MainProcess] Task tasks.GetEmailsJob[be79aff8-ebc4-40db-9e1d-e77fb9a6a912] succeeded in 0.25130944699s: ['10digitphonenumber@airmessage.net', '10digitphonenumber@mobile.surewest.com', '10digitphonenumber@page.mobilcom.net',...
+[2014-01-17 16:06:26,600: INFO/MainProcess] Received task: tasks.GetEmailsJob[e241f33e-a266-47ca-ae64-d7024efb91cd]
+[2014-01-17 16:06:26,603: WARNING/Worker-4] Collecting email from source.
+[2014-01-17 16:06:26,902: INFO/MainProcess] Task tasks.GetEmailsJob[e241f33e-a266-47ca-ae64-d7024efb91cd] succeeded in 0.298563193996s: ['10digitphonenumber@airmessage.net', '10digitphonenumber@mobile.surewest.com', '10digitphonenumber@page.mobilcom.net',...
+[2014-01-17 16:06:55,279: INFO/MainProcess] Received task: tasks.GetEmailsJob[12d9fc39-8270-4275-9f3c-b7f783719caf]
+[2014-01-17 16:06:55,308: WARNING/Worker-4] Collecting email from source.
+[2014-01-17 16:06:55,661: INFO/MainProcess] Task tasks.GetEmailsJob[12d9fc39-8270-4275-9f3c-b7f783719caf] succeeded in 0.352549300995s: ['10digitphonenumber@airmessage.net', '10digitphonenumber@mobile.surewest.com', '10digitphonenumber@page.mobilcom.net',...
+[2014-01-17 16:06:57,842: INFO/MainProcess] Received task: tasks.GetEmailsJob[3d0b1bb0-1f45-4972-8983-085a003ef727]
+[2014-01-17 16:06:57,844: WARNING/Worker-3] Collecting email from source.
+[2014-01-17 16:06:58,111: INFO/MainProcess] Task tasks.GetEmailsJob[3d0b1bb0-1f45-4972-8983-085a003ef727] succeeded in 0.266452800017s: ['10digitphonenumber@airmessage.net', '10digitphonenumber@mobile.surewest.com', '10digitphonenumber@page.mobilcom.net',...
+[2014-01-17 16:08:12,682: WARNING/MainProcess] /Library/Python/2.7/site-packages/celery/apps/worker.py:159: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2014-01-17 16:08:12,732: INFO/MainProcess] Connected to amqp://chris@127.0.0.1:5672/chrishost
+[2014-01-17 16:08:12,760: INFO/MainProcess] mingle: searching for neighbors
+[2014-01-17 16:08:13,775: INFO/MainProcess] mingle: sync with 1 nodes
+[2014-01-17 16:08:13,776: INFO/MainProcess] mingle: sync complete
+[2014-01-17 16:08:13,795: WARNING/MainProcess] celery3@myhost.local ready.
+[2014-01-17 16:08:14,389: INFO/MainProcess] sync with celery5@myhost.local
+[2014-01-17 16:08:15,165: INFO/MainProcess] sync with celery6@myhost.local
+[2014-01-17 16:08:16,216: INFO/MainProcess] sync with celery7@myhost.local
+[2014-01-17 16:08:17,697: INFO/MainProcess] Events of group {task} enabled by remote.
+[2014-01-17 16:08:21,082: INFO/MainProcess] sync with celery8@myhost.local
+[2014-01-17 16:08:24,655: INFO/MainProcess] sync with celery9@myhost.local
+[2014-01-17 16:08:29,965: INFO/MainProcess] sync with celery10@myhost.local
+[2014-01-17 16:08:31,057: INFO/MainProcess] sync with celery11@myhost.local
+[2014-01-17 16:08:35,147: INFO/MainProcess] sync with celery12@myhost.local
+[2014-01-17 16:08:42,026: INFO/MainProcess] sync with celery13@myhost.local
+[2014-01-17 16:09:03,705: INFO/MainProcess] sync with celery14@myhost.local
+[2014-01-17 16:09:23,734: INFO/MainProcess] sync with celery15@myhost.local
+[2014-01-17 16:09:31,190: INFO/MainProcess] sync with celery16@myhost.local
+[2014-01-17 16:09:40,254: INFO/MainProcess] sync with celery17@myhost.local
+[2014-01-17 16:09:54,203: INFO/MainProcess] sync with celery18@myhost.local
+[2014-01-17 16:09:54,878: INFO/MainProcess] sync with celery19@myhost.local
+[2014-01-17 16:10:07,865: INFO/MainProcess] sync with celery20@myhost.local
+[2014-01-17 16:10:42,098: INFO/MainProcess] Received task: tasks.UrlOpenJob[4dd5b0f1-21eb-43ed-bcc6-65e44c3a5314]
+[2014-01-17 16:10:43,976: WARNING/Worker-2] Opening:  http://www.emailtextmessages.com/
+[2014-01-17 16:10:45,641: INFO/MainProcess] Task tasks.UrlOpenJob[4dd5b0f1-21eb-43ed-bcc6-65e44c3a5314] succeeded in 2.25797254313s: '\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"...
+[2014-01-17 16:11:43,098: INFO/MainProcess] Received task: tasks.UrlOpenJob[2b14b29b-18e7-43a2-94c1-ae202b6306f5]
+[2014-01-17 16:11:43,549: WARNING/Worker-1] Opening:  http://www.emailtextmessages.com/
+[2014-01-17 16:11:47,418: INFO/MainProcess] Task tasks.UrlOpenJob[2b14b29b-18e7-43a2-94c1-ae202b6306f5] succeeded in 4.21439173492s: '\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"...
+[2014-01-17 16:14:22,299: WARNING/MainProcess] /Library/Python/2.7/site-packages/celery/apps/worker.py:159: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+[2014-01-17 16:14:22,430: INFO/MainProcess] Connected to amqp://chris@127.0.0.1:5672/chrishost
+[2014-01-17 16:14:22,452: INFO/MainProcess] mingle: searching for neighbors
+[2014-01-17 16:14:23,467: INFO/MainProcess] mingle: all alone
+[2014-01-17 16:14:23,479: WARNING/MainProcess] celery3@myhost.local ready.
+[2014-01-17 16:14:27,699: INFO/MainProcess] Events of group {task} enabled by remote.
+[2014-01-17 16:15:03,378: INFO/MainProcess] Received task: tasks.GetEmailsJob[ea11f2cf-d9a9-4b51-8d94-114f33aa0e5d]
+[2014-01-17 16:15:03,383: WARNING/Worker-1] Collecting email from source.
+[2014-01-17 16:15:04,035: INFO/MainProcess] Task tasks.GetEmailsJob[ea11f2cf-d9a9-4b51-8d94-114f33aa0e5d] succeeded in 0.652275851928s: ['jpurdy@uw.edu', 'assembly@u.washington.edu', 'nmmckin@uw.edu']
+[2014-01-17 16:15:11,679: INFO/MainProcess] Received task: tasks.GetEmailsJob[35934c20-2d15-4c78-82f4-66466006401e]
+[2014-01-17 16:15:11,682: WARNING/Worker-2] Collecting email from source.
+[2014-01-17 16:15:11,902: INFO/MainProcess] Task tasks.GetEmailsJob[35934c20-2d15-4c78-82f4-66466006401e] succeeded in 0.220606133807s: ['jpurdy@uw.edu', 'assembly@u.washington.edu', 'nmmckin@uw.edu']
+[2014-01-17 16:15:28,708: INFO/MainProcess] Received task: tasks.GetEmailsJob[5f62b338-8d78-4b9a-86da-c6b7399ee409]
+[2014-01-17 16:15:28,712: WARNING/Worker-3] Collecting email from source.
+[2014-01-17 16:15:29,665: INFO/MainProcess] Task tasks.GetEmailsJob[5f62b338-8d78-4b9a-86da-c6b7399ee409] succeeded in 0.953541196883s: ['jpurdy@uw.edu', 'assembly@u.washington.edu', 'nmmckin@uw.edu']
+[2014-01-17 16:15:31,673: INFO/MainProcess] Received task: tasks.GetEmailsJob[4efdc3f7-5f46-4570-a7c5-b9930ded1509]
+[2014-01-17 16:15:31,677: WARNING/Worker-2] Collecting email from source.
+[2014-01-17 16:15:31,930: INFO/MainProcess] Task tasks.GetEmailsJob[4efdc3f7-5f46-4570-a7c5-b9930ded1509] succeeded in 0.252426205901s: ['jpurdy@uw.edu', 'assembly@u.washington.edu', 'nmmckin@uw.edu']
+[2014-01-17 16:15:34,288: INFO/MainProcess] Received task: tasks.GetEmailsJob[832072f0-77ad-4270-a337-07ba9a2257f0]
+[2014-01-17 16:15:34,291: WARNING/Worker-1] Collecting email from source.
+[2014-01-17 16:15:34,456: INFO/MainProcess] Task tasks.GetEmailsJob[832072f0-77ad-4270-a337-07ba9a2257f0] succeeded in 0.164633824956s: ['jpurdy@uw.edu', 'assembly@u.washington.edu', 'nmmckin@uw.edu']
