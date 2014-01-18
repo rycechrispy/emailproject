@@ -7759,3 +7759,6 @@ You must only enable the serializers that you will actually use.
 [2014-01-17 16:15:34,009: INFO/MainProcess] Received task: tasks.UrlOpenJob[07dd63f3-dd99-466d-be7a-5d1789db46bc]
 [2014-01-17 16:15:34,012: WARNING/Worker-1] Opening:  http://www.tacoma.uw.edu/faculty-assembly/contact-us
 [2014-01-17 16:15:34,209: INFO/MainProcess] Task tasks.UrlOpenJob[07dd63f3-dd99-466d-be7a-5d1789db46bc] succeeded in 0.196601223899s: '<!DOCTYPE html>\n<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->\n<!--[if lte IE 6]><html...
+[2014-01-17 16:20:13,060: INFO/MainProcess] Received task: tasks.UrlOpenJob[f3d3109c-1d76-4d45-b029-06737e7a1be9]
+[2014-01-17 16:20:13,377: WARNING/Worker-2] Opening:  http://www.emailtextmessages.com/
+[2014-01-17 16:20:14,864: INFO/MainProcess] Task tasks.UrlOpenJob[f3d3109c-1d76-4d45-b029-06737e7a1be9] succeeded in 1.48795627896s: '\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"...

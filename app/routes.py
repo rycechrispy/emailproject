@@ -25,14 +25,12 @@ def show_emails():
 			if ',' in url:
 				url_list = url.split(",")
 				def g():
-					emails = []
 					count = 0
 					link_count = 0
 					for url in url_list:
 						emails_for_url = find_emails_from_url(url)
-						emails.append(emails_for_url)
 						count += len(emails_for_url)
-						link_count = len(emails)
+						link_count += 1
 						yield emails_for_url, count, link_count, url
 				return Response(stream_template('emails.html', data=g()))
 				# count = 0

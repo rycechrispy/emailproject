@@ -163,3 +163,6 @@ You must only enable the serializers that you will actually use.
 [2014-01-17 16:15:33,687: INFO/MainProcess] Received task: tasks.GetEmailsJob[fd7885c5-096b-47a6-b0b5-61406edfa172]
 [2014-01-17 16:15:33,695: WARNING/Worker-3] Collecting email from source.
 [2014-01-17 16:15:33,941: INFO/MainProcess] Task tasks.GetEmailsJob[fd7885c5-096b-47a6-b0b5-61406edfa172] succeeded in 0.246955554001s: ['jpurdy@uw.edu', 'assembly@u.washington.edu', 'nmmckin@uw.edu']
+[2014-01-17 16:20:12,364: INFO/MainProcess] Received task: tasks.GetEmailsJob[6437f236-5947-4fb0-9b3a-66b82476378f]
+[2014-01-17 16:20:12,368: WARNING/Worker-2] Collecting email from source.
+[2014-01-17 16:20:12,567: INFO/MainProcess] Task tasks.GetEmailsJob[6437f236-5947-4fb0-9b3a-66b82476378f] succeeded in 0.197910937015s: ['jpurdy@uw.edu', 'assembly@u.washington.edu', 'nmmckin@uw.edu']
